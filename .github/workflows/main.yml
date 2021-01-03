@@ -1,0 +1,8 @@
+name: CI # Give it any name
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 13 * * *' # daily 9pm MYT

@@ -1,0 +1,15 @@
+{
+  "name": "mattoleary",
+  "scripts": {
+    "clean": "npx del dist",
+    "prebuild": "npm run clean",
+    "build:prod": "ELEVENTY_ENV=prod npx eleventy",
+    "predeploy": "npm run build:prod",
+    "deploy": "npx firebase deploy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "del-cli": "^3.0.0",
+    "firebase-tools": "^9.1.0"
+  }
+}
